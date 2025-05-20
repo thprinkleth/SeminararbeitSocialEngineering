@@ -1,0 +1,259 @@
+\documentclass[12pt, a4paper, oneside]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{caladea} % close enough für Cambria :clueless:
+
+\usepackage{geometry}
+
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=verbose-note,
+    sorting=nyt,
+    giveninits=true,
+    uniquename=init,
+]{biblatex}
+
+\addbibresource{Quellen.bib}
+    
+\geometry{
+    a4paper,
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm
+}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{ragged2e}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=blue,
+    pdftitle={Seminararbeit: Social Engineering und Phishing},
+    pdfauthor={Jens Fröhlich},
+    pdfsubject={Der Staat als Hacker (SOT82533)}
+}
+
+\usepackage[footwidth=paper]{scrlayer-scrpage}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\titlehead{
+    \centering
+    % \includegraphics[width=4cm]{tum_logo.png} \\
+    \vspace{1cm}
+    Technische Universität München \\
+    Fakultät für Informatik
+    \vspace{0.5cm}
+}
+
+\subject{Seminararbeit \\ im Rahmen des Seminars \\ "Der Staat als Hacker"}
+
+\title{Social Engineering und Phishing}
+
+\author{Jens Fröhlich}
+
+\date{12. Juni 2025}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\pagenumbering{gobble}
+
+\begin{titlepage}
+    \thispagestyle{empty}
+    \maketitle
+    \vspace{2cm}
+    \begin{center}
+    \end{center}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+
+\clearpage
+\pagestyle{empty}
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+
+\justify
+
+\newgeometry{
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2cm,
+    right=5cm,
+    marginparwidth=4.5cm,
+    marginparsep=0.5cm
+}
+
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+
+\ihead{}
+\chead{}
+\ohead{}
+
+\ifoot{}
+\cfoot[\pagemark]{\pagemark}
+\ofoot{}
+
+\pagenumbering{arabic}
+\setcounter{page}{2}
+
+\section{Einleitung}
+Jens Fröhlich hat dazu ein wunderschönen Zitiertest\footcite{JensTest}.
+
+\subsection{Social Engineering und Phishing}
+\begin{itemize}
+  \item Kurzes anschneiden beider Begriffe
+  \item Abgrenzung der Begriffe
+\end{itemize}
+
+% TODO
+\subsection{Relevanz des Themas}
+\begin{itemize}
+  \item Warum ist Social Engineering und Phishing wichtig?
+\end{itemize}
+
+% TODO
+\subsubsection{Fallzahlen}
+\begin{itemize}
+  \item Statistiken und Fallzahlen zu Social Engineering und Phishing
+  \item Ganz kleine Analyse (Anstieg / Rückgang)
+  \item Vergleiche mit anderen Cyberangriffen (besonders wichtig oder nicht?)
+\end{itemize}
+
+% TODO
+\subsubsection{Wirtschaftliche Schäden und Auswirkungen auf Unternehmen und Privatpersonen}
+\begin{itemize}
+  \item Wirtschaftliche Schäden
+  \item Auswirkungen auf Unternehmen und Privatpersonen
+  \item Beispiele
+  \item Vertrauensverlust eventuell?
+\end{itemize}
+
+
+\clearpage
+\section{Definition von Social Engineering}
+
+% TODO
+\subsection{Grundprinzipien und Psychologie des Social Engineerings}
+\begin{itemize}
+  \item Gute Definition
+  \item Psychologische Grundlagen + Angriffspunkte (Vertrauen, Neugier, Angst, Autorität, Hilfsbereitschaft, ..)
+  \item Abgrenzung zu anderen Angriffen (vllt. Malware)
+\end{itemize}
+
+% TODO
+\subsection{Gängige Methoden}
+\begin{itemize}
+  \item Techniken (Baiting, Pretexting, Quid pro Quo, Tailgating, Vishing, Smishing, ..)
+  \item Nicht Phishing vorwegnehmen
+\end{itemize}
+
+\clearpage
+\section{Definition von Phishing}
+
+% TODO
+\subsection{Definition und Abgrenzung als Teilbereich des Social Engineerings}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+% TODO
+\subsection{Die Verschiedenen Arten von Phishing und ihre Ziele}
+\begin{itemize}
+  \item Spear Phishing, Whaling, Clone Phishing, Voice Phishing, Smishing, Vishing, Pharming, E-Mail Phishing, ..
+  \item Ziele (Datenklau (Finanzen maybe, aber auch Anschrift), Identitätsdiebstahl, Malware-Verbreitung, ..)
+\end{itemize}
+
+\clearpage
+\section{Bekannte Phishing-Skandale und ihre Folgen}
+
+% TODO, TBD
+\subsection{DNC-Hack (2016)}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+% TODO, TBD
+\subsection{Twitter Spear Phishing Attack (2020)}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+% TODO
+\subsection{Weitere Skandale}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+\clearpage
+\section{Bezug zum Ethischen Hacking}
+
+% TODO
+\subsection{Social Engineering und Phishing als Werkzeuge im Penetration Testing}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+% TODO
+\subsection{Aufklärung und Sensibilisierung durch simulierte Angriffe}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+% TODO
+\subsection{Rechtliche und ethische Rahmenbedingungen}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+\clearpage
+\section{Fazit und Ausblick}
+
+% TODO
+\subsection{Zusammenfassung}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+% TODO
+\subsection{Bedeutung von Präventionsmaßnahmen und Sensibilisierung}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+% TODO
+\subsection{Zukünftige Entwicklungen und Herausforderungen}
+\begin{itemize}
+  \item PLATZHALTER
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+\clearpage
+\printbibliography[title={Literaturverzeichnis}]
+
+\end{document}
