@@ -17,6 +17,7 @@
     sorting=nyt,
     giveninits=true,
     uniquename=init,
+    citestyle=authoryear,
 ]{biblatex}
 
 \addbibresource{Quellen.bib}
@@ -123,19 +124,23 @@
 \setcounter{page}{2}
 
 \section{Einleitung}
-Jens Fröhlich hat dazu ein wunderschönen Zitiertest\footcite{JensTest}.
 
 \subsection{Social Engineering und Phishing}
-\begin{itemize}
-  \item Kurzes anschneiden beider Begriffe
-  \item Abgrenzung der Begriffe
-\end{itemize}
+\textit{"Hallo Mama/Papa, ich bin's. Ich habe mein Handy verloren und 
+brauche dringend Geld. Kannst du mir bitte 100 Euro überweisen? 
+Ich kann dir später alles erklären."} - Diese Art an Nachricht wird wohl kaum einem
+neu vorkommen und ist ein gutes Beispiel für eine Thematik, die uns heutezutage immer häufiger begegnet:
+\textbf{Social Engineering}.
+\par
+Dabei liegt der komplette Fokus auf dem Mensch als Schwachstelle, um durch gezielte psychologische
+Manipulation an vertrauliche Informationen zu gelangen. Dabei wird oft das Vertrauen des Opfers ausgenutzt, 
+um es dazu zu bringen, sensible Daten preiszugeben oder bestimmte Handlungen vorzunehmen.\footcite{BSISocialEngineering}
+\par
+\textbf{Phishing} im speziellen ist eine besonders verbreitete Form des Social Engineerings. 
+Hier handelt es sich konkret um den Versuch, über gefälschte E-Mails, Webseiten oder 
+Nachrichten an persönliche Daten zu gelangen.\footcite{BSIPhishing}\\
 
-% TODO
 \subsection{Relevanz des Themas}
-\begin{itemize}
-  \item Warum ist Social Engineering und Phishing wichtig?
-\end{itemize}
 
 % TODO
 \subsubsection{Fallzahlen}
@@ -155,25 +160,39 @@ Jens Fröhlich hat dazu ein wunderschönen Zitiertest\footcite{JensTest}.
 \end{itemize}
 
 
-\clearpage
 \section{Definition von Social Engineering}
 
 % TODO
 \subsection{Grundprinzipien und Psychologie des Social Engineerings}
-\begin{itemize}
-  \item Gute Definition
-  \item Psychologische Grundlagen + Angriffspunkte (Vertrauen, Neugier, Angst, Autorität, Hilfsbereitschaft, ..)
-  \item Abgrenzung zu anderen Angriffen (vllt. Malware)
-\end{itemize}
+Die Ausnutzung von menschlichen Eigenschaften wie Vertrauen, Angst, Autorität, Hilfsbereitschaft 
+und viele mehr stehen im Vordergrund beim \textbf{Social Engineering}. Durch gezielte Manipulation
+oder Erpressung werden unzählige Opfer (oftmals ohne ihr Wissen) dazu gebracht gewisse Geldsummen
+für vermeindliche Dienstleistungen zu überweisen, sensible Daten anzugeben oder gezielte Schutzmechanismen
+(z.B. 2-Faktor-Authentifizierung) zu umgehen.\footcite{BSISocialEngineering}\\
+Hier geht es keineswegs um die Umgehung von technischen Schutzmaßnahmen, sondern um das gezielte
+Täschen vom Mensch als Schwachstelle. Durch bewährtes Probiere von bestimmten Angriffstechniken
+verfeinern Angreifer ihre Methoden immer weiter, dass Menschen schneller (und häufiger) beeinflusst
+werden können, um so auf Systeme zuzugreifen, oder an sensible Daten zu gelangen.
+Deswegen hilft auch nur eine Sache gegen diese Art von Angriffen: \textbf{Aufklärung}.\\
 
 % TODO
 \subsection{Gängige Methoden}
-\begin{itemize}
-  \item Techniken (Baiting, Pretexting, Quid pro Quo, Tailgating, Vishing, Smishing, ..)
-  \item Nicht Phishing vorwegnehmen
-\end{itemize}
+Neben den Subgenres von Phishing und Whaling ist \textbf{Baiting} sehr verbreitet.
+Hier geht es darum, dem Opfer falsche Versprechen zu geben. Sei es entweder ein Gewinnspiel,
+welches angeblich gewonnen wurde oder sogar in physischer Form, wie z.B. ein USB-Stick,
+der gezielt an einen gut ersichtlichen Ort gelegt wurde und mit Malware präpariert ist.\footcite{CS_10Arten}
+\par
+Bei \textbf{Quid pro Quo} wird darauf geachtet, Opfern attraktive Dienstleistungen anzubieten, um im Gegenzug
+an sensible Daten (oder Geld) zu gelangen. Diese Strategie wurde im Netz vor allem durch den YouTuber \textit{Jim Browning} bekannt.
+Durch seine Videos, in denen er sogenannte Call-Center aufdeckt und diese sukzessive inflitriert und
+am Ende an die lokalen Behörden übergibt, wird deutlich, wie einfach es ist, Menschen zu manipulieren.\footcite{JB_YouTube}
+\par
+\textbf{Honeytrapping} ist eine gängige Methode um sich mit Menschen, die auf diversen Dating-Plattformen nach
+ihrer Traumfrau suchen, anzufreunden und dadurch einen finanziellen Vorteil zu erlangen. Vor allem 
+der Aufschwung von Künstlicher Intelligenz und Date-Portalen hat es den Angreifern umso leicht gemacht
+gefälschte Profile zu erstellen und falsche Versprechen zu geben.\footcite{CS_10Arten}
 
-\clearpage
+
 \section{Definition von Phishing}
 
 % TODO
@@ -182,6 +201,7 @@ Jens Fröhlich hat dazu ein wunderschönen Zitiertest\footcite{JensTest}.
   \item PLATZHALTER
 \end{itemize}
 
+
 % TODO
 \subsection{Die Verschiedenen Arten von Phishing und ihre Ziele}
 \begin{itemize}
@@ -189,7 +209,6 @@ Jens Fröhlich hat dazu ein wunderschönen Zitiertest\footcite{JensTest}.
   \item Ziele (Datenklau (Finanzen maybe, aber auch Anschrift), Identitätsdiebstahl, Malware-Verbreitung, ..)
 \end{itemize}
 
-\clearpage
 \section{Bekannte Phishing-Skandale und ihre Folgen}
 
 % TODO, TBD
@@ -210,7 +229,6 @@ Jens Fröhlich hat dazu ein wunderschönen Zitiertest\footcite{JensTest}.
   \item PLATZHALTER
 \end{itemize}
 
-\clearpage
 \section{Bezug zum Ethischen Hacking}
 
 % TODO
@@ -231,7 +249,6 @@ Jens Fröhlich hat dazu ein wunderschönen Zitiertest\footcite{JensTest}.
   \item PLATZHALTER
 \end{itemize}
 
-\clearpage
 \section{Fazit und Ausblick}
 
 % TODO
