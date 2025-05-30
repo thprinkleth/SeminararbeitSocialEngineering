@@ -71,7 +71,7 @@
     \vspace{0.5cm}
 }
 
-\subject{Seminararbeit \\ im Rahmen des Seminars \\ "Der Staat als Hacker"}
+\subject{Seminararbeit \\ im Rahmen des Seminars \\ ``Der Staat als Hacker'' \\ (SOT82533)}
 
 \title{Social Engineering und Phishing}
 
@@ -128,78 +128,91 @@
 \section{Einleitung}
 
 \subsection{Social Engineering und Phishing}
-\textit{"Hallo Mama/Papa, ich bin's. Ich habe mein Handy verloren und 
+\textit{``Hallo Mama/Papa, ich bin's. Ich habe mein Handy verloren und 
 brauche dringend Geld. Kannst du mir bitte 100 Euro überweisen? 
-Ich kann dir später alles erklären."} - Diese Art an Nachricht wird wohl kaum einem
+Ich kann dir später alles erklären.''} - Diese Art an Nachricht wird wohl kaum einem
 neu vorkommen und ist ein gutes Beispiel für eine Thematik, die uns heutezutage immer häufiger begegnet:
 \textbf{Social Engineering}.
 \par
 Dabei liegt der komplette Fokus auf dem Mensch als Schwachstelle, um durch gezielte psychologische
 Manipulation an vertrauliche Informationen zu gelangen. Dabei wird oft das Vertrauen des Opfers ausgenutzt, 
-um es dazu zu bringen, sensible Daten preiszugeben oder bestimmte Handlungen vorzunehmen.\footcite{BSISocialEngineering}
+um es dazu zu bringen, sensible Daten preiszugeben oder bestimmte Handlungen vorzunehmen (wie zum Beispiel
+Geld überweisen).\footcite{BSISocialEngineering}
 \par
 \textbf{Phishing} im Speziellen ist eine besonders verbreitete Form des Social Engineerings. 
-Hier handelt es sich konkret um den Versuch, über gefälschte E-Mails, Webseiten oder 
-Nachrichten an persönliche Daten zu gelangen.\footcite{BSIPhishing}\\
+Hier handelt es sich konkret um den Versuch sich als Personen auszugeben, die sie garnicht sind,
+und somit über gefälschte E-Mails, Telefonanrufe, Webseiten oder Nachrichten um dadurch ihre Opfer zu 
+manipulieren.\footcite{BSIPhishing}\\
 
 \subsection{Relevanz des Themas}
 
 \subsubsection{Fallzahlen}
-Durch die hohe Erfolgsquote von Social Engineering bzw. Phishing stehen diese diese perfiden 
-Angriffsmethoden nicht zu Unrecht so häufig im Rampenlicht. Knapp zwei von drei von sogenannten 
-Databreaches sind auf das Element Mensch zurückzuführen, wovon mehr als 80\% von diesen Breaches
-auf Phishing zurückzuführen sind. Zudem sind laut SlashNext die Zahl an Phishing-Angriffen ist
-seit 2021 um 49\% gestiegen. Besonders hervorzuheben hierbei ist, dass der Anstieg mit der 
-Veröffentlichung von ChatGPT das 4000-fach erreicht hat.\footcite{HoxHunt_Report}
+Durch die hohe Erfolgsquote von Social Engineering bzw. Phishing stehen diese perfiden 
+Angriffsmethoden nicht zu Unrecht so häufig im Rampenlicht. Knapp zwei von drei 
+Databreaches sind auf das Element Mensch zurückzuführen, wovon mehr als 80\% von diesen Angriffen
+als Phishing eingestuft werden können. Zudem ist laut SlashNext die Anzahl an Phishing-Angriffen
+seit 2021 um ungefähr 49\% gestiegen. Besonders hervorzuheben sei hierbei, dass seit der Veröffentlichung
+von ChatGPT die Anzahl an Phishing-Angriffen um mehr als 4000\% angestiegen ist.\footcite{HoxHunt_Report}
 \par
-Zudem hat IBM analysiert, dass in etwa 15\% aller Datenschutzverletzungen auf Phishing, und
+Allerdings hat IBM analysiert, dass etwa 15\% aller Datenschutzverletzungen auf Phishing, und
 dadurch auch Social Engineering, zurückzuführen sind.\footcite{IBM_Report}
+Dieser Unterschied kann dadurch erklärt werden, dass Phishing in Studien oft enger oder breiter 
+gefächert werden kann. So hat IBM höhstwahrscheinlich nur die Fälle aufgenommen, in denen 
+Phishing eine zentrale Rolle gespielt hat, während HoxFunt auch Fälle mit einbezieht,
+in denen Phishing bzw. Social Engineering Teil des Angriffs, aber nicht (nur) die Hauptursache war.
 
 \subsubsection{Wirtschaftliche Schäden und Auswirkungen auf Unternehmen und Privatpersonen}
-Auch meldet IBM im Jahr 2024 ein ungefährer Schaden von 4.88 Millionen US-Dollar pro Vorfall.\footcite{IBM_Phishing}
-Vor allem Unternehmen werden oft betroffen, da man dort oft klare Hierarchien hat und deswegen
-die Angreifer gezielter bestimmte Personen impersonifizieren können und somit die Mitarbeiter
-schneller dazu bringen können, sensible Daten preiszugeben oder Schadsoftware herunterzuladen.
+Laut einer Studie von IBM verursachen größere Phishing-Angriffe im Jahr 2024 durchschnittlich 
+einen Schaden von etwa 4,88 Millionen US-Dollar pro Vorfall.\footcite{IBM_Phishing}
+Gerade Unternehmen sind besonders gefährdet, da die klaren Hierarchien es Angreifern ermöglichen, 
+gezielt bestimmte Personen zu imitieren. Dadurch lassen sich Mitarbeitende oft leichter dazu 
+verleiten, sensible Informationen preiszugeben oder unbewusst mit gutem Willen Schadsoftware herunterzuladen.
 Außerdem kann, wenn ein Unternehmen stark betroffen ist, ein enormer Vertrauensverlust gegenüber
 der Öffentlichkeit entstehen, was sich negativ auf die Verkaufszahlen auswirken kann.
 \par
 Ein sehr bekanntes Bespiel dafür ist der Target (US-amerikanische Einzelhändler) Hack von 2013,
-welcher (wenn auch nur indirekt) ungefähr 162 Millionen US-Dollar Schaden verursacht hat. Dadurch,
-dass Kreditkarteninformationen von Milionen Kunden gestohlen wurden, hat Target sowohl einen extremen
+welcher (wenn auch nur indirekt) ungefähr 162 Millionen US-Dollar Schaden mit sich gebracht hat. Dadurch,
+dass Kreditkarteninformationen von Millionen Kunden gestohlen wurden, hat Target sowohl einen extremen
 Vertrauensverlust erlitten, als auch starke finanzielle Einbußen hinnehmen müssen.\footcite{Target_Breach}\\
 
 \section{Definition von Social Engineering}
 
 % TODO
 \subsection{Grundprinzipien und Psychologie des Social Engineerings}
-Die Ausnutzung von menschlichen Eigenschaften wie Vertrauen, Angst, Autorität, Hilfsbereitschaft 
-und viele mehr stehen im Vordergrund beim \textbf{Social Engineering}. Durch gezielte Manipulation
-oder Erpressung werden unzählige Opfer (oftmals ohne ihr Wissen) dazu gebracht gewisse Geldsummen
+Die Ausnutzung von menschlichen Eigenschaften wie unter anderem Vertrauen, Angst, Autorität, Hilfsbereitschaft 
+stehen im Vordergrund beim \textbf{Social Engineering}. Durch gezielte Manipulation
+oder Erpressung werden unzählige Opfer (oftmals ohne ihr Wissen) dazu gebracht, Geldsummen
 für vermeindliche Dienstleistungen zu überweisen, sensible Daten anzugeben oder gezielte Schutzmechanismen
-(z.B. 2-Faktor-Authentifizierung) zu umgehen.\footcite{BSISocialEngineering}\\
+(z.B. 2-Faktor-Authentifizierung) außer Kraft zu setzen.\footcite{BSISocialEngineering}\\
 Hier geht es keineswegs um die Umgehung von technischen Schutzmaßnahmen, sondern um das gezielte
-Täschen vom Mensch als Schwachstelle. Durch bewährtes Probiere von bestimmten Angriffstechniken
-verfeinern Angreifer ihre Methoden immer weiter, dass Menschen schneller (und häufiger) beeinflusst
-werden können, um so auf Systeme zuzugreifen, oder an sensible Daten zu gelangen.
+Täuschung und Manipulation des Menschen als Schwachstelle stehen im Mittelpunkt, sodass technische Barrieren 
+oft irrelevant werden. Angreifer verfeinern ihre Methoden kontinuierlich durch erprobte Angriffstechniken. 
+Dadurch gelingt es ihnen immer schneller und häufiger, Menschen zu beeinflussen.
 Deswegen hilft auch nur eine Sache gegen diese Art von Angriffen: \textbf{Aufklärung}.\\
 
 % TODO
 \subsection{Gängige Methoden}
-Neben den Subgenres von Phishing und Whaling ist \textbf{Baiting} sehr verbreitet.
-Hier geht es darum, dem Opfer falsche Versprechen zu geben. Sei es entweder ein Gewinnspiel,
-welches angeblich gewonnen wurde oder sogar in physischer Form, wie z.B. ein USB-Stick,
-der gezielt an einen gut ersichtlichen Ort gelegt wurde und mit Malware präpariert ist.\footcite{CS_10Arten}
+Neben den Subgenre von Phishing ist \textbf{Baiting} sehr verbreitet.
+Hierbei geht es darum, dem Opfer falsche Versprechen zu geben. So kann zum Beispiel ein Gewinnspiel vorgetäuscht werden,
+welches angeblich gewonnen wurde. Baiting gibt es aber auch in physischer Form. Häufig legt ein Angreifer einen USB-Stick
+an einen gut ersichtlichen Ort und präperiert diesen im Vorhinein mit Malware. So muss das Opfer diesen 
+Stick nur an seinen Computer stecken und schon hat der Angreifer Zugriff auf das System.\footcite{CS_10Arten}
 \par
 Bei \textbf{Quid pro Quo} wird darauf geachtet, Opfern attraktive Dienstleistungen anzubieten, um im Gegenzug
-an sensible Daten (oder Geld) zu gelangen. Diese Strategie wurde im Netz vor allem durch den YouTuber \textit{Jim Browning} bekannt.
+an Geld (oder in manchen Fällen auch sensible Daten) zu gelangen. Diese Strategie wurde im Netz vor allem durch den YouTuber \textit{Jim Browning} bekannt.
 Durch seine Videos, in denen er sogenannte Call-Center aufdeckt und diese sukzessive inflitriert und
 am Ende an die lokalen Behörden übergibt, wird deutlich, wie einfach es ist, Menschen zu manipulieren.\footcite{JB_YouTube}
+\par
+Oft verbunden mit Quod pro Quo ist die sogneannte \textbf{Scareware}, bei der Angreifer versuchen, ihre Opfer 
+durch Angst dazu zu bringen, Schadsoftwäre verkleidet als Sicherheitssoftware herunterzuladen. Dies kann 
+durch einfache Pop-up Fenster geschiehen, die behaupten, das System wäre infiziert, oder durch gezielte
+Anrufe, bei denen sich die Angreifer als Mitarbeiter bekannter Firmen ausgeben und behaupten, das Konto
+vom Nutzer wäre kompromittiert worden.\footcite{Keeper_Scareware}
 \par
 \textbf{Honeytrapping} ist eine gängige Methode um sich mit Menschen, die auf diversen Dating-Plattformen nach
 ihrer Traumfrau suchen, anzufreunden und dadurch einen finanziellen Vorteil zu erlangen. Vor allem 
 der Aufschwung von Künstlicher Intelligenz und Date-Portalen hat es den Angreifern umso leicht gemacht
 gefälschte Profile zu erstellen und falsche Versprechen zu geben.\footcite{CS_10Arten}
-
 
 \section{Definition von Phishing}
 
@@ -224,7 +237,7 @@ gefälschte Profile zu erstellen und falsche Versprechen zu geben.\footcite{CS_1
 Ein sehr bekanntes Beispiel für einen Phishing-Angriff ist der DNC-Hack von 2015 und 2016, 
 bei dem die demokratische Partei der USA Opfer eines Spear-Phishing-Angriffs wurde. 
 Dabei wurden E-Mails an 300 Angehörige der demokratischen Partei oder der Clinton-Kampagne
-verschickt, die von russischen Hackern stammten. Die zwei Gruppen, "Fancy Bear" und "Cozy Bear",
+verschickt, die von russischen Hackern stammten. Die zwei Gruppen, ``Fancy Bear'' und ``Cozy Bear'',
 haben insgesamt 70GB von den Servern der Clinton-Kampagne und 300GB von den DNC-Servern gestohlen.
 Diese Daten, zusammen mit 20.000 E-Mails wurden auf WikiLeaks veröffentlicht.\footcite{IDStrong_DNC}
 \par
