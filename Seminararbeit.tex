@@ -13,8 +13,7 @@
 \usepackage{csquotes}
 \usepackage[
     backend=biber,
-    style=verbose-note,
-    sorting=nyt,
+    style=verbose,
     giveninits=true,
     uniquename=init,
     citestyle=authoryear,
@@ -58,6 +57,10 @@
 }
 
 \usepackage[footwidth=paper]{scrlayer-scrpage}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\tolerance=2000
 
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
@@ -252,9 +255,28 @@ politischen und gesellschaftlichen Auswirkungen, die politisch motivierte Angrif
 
 % TODO, TBD
 \subsection{Twitter Spear Phishing Attack (2020)}
-\begin{itemize}
-  \item PLATZHALTER
-\end{itemize}
+
+Ein anderer bekannter Vorfall ist der Twitter-Skandal von 2020, bei dem eine Gruppe mittels Spear Phishing geschafft
+hat, die Accounts von bekannten Personen wie Elon Musk, Barack Obama, Joe Biden und Bill Gates zu übernehmen.
+Dabei wurden mehrere Mitarbeiter durch Emails dazu gebracht, ihre Zugangsdaten preiszugeben, sodass sich 
+der 17-jährige Graham Ivan Clark Zugriff auf die internen Systeme von Twitter verschaffen konnte. Dadurch gelang
+es ihm die Support-Tools von Twitter zu nutzen, um die Accounts der Opfer zu übernehmen. Insgesamt wurde von 45 Accounts
+getweeted, wobei 36 Accounts Zugriff auf private Nachrichten hatten. Von diesen Accounts wurde während Corona-Zeiten 
+ein Bitcoin-Scam gestartet, in welchem die Angreifer vorgetäuscht haben, sie würden alle gespendeten Bitcoins verdoppelt
+zurückgeben. Dadurch wurden insgesamt ca. 12,86 BTC (umgerechnet nahe 100.000 Euro) erbeutet.\footcite{teampw_TwitterPhishing}\\\\
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=10cm]{bill_hack.png}
+  \caption[Screenshot von Bill Gates' Twitter Account während des Hacks]{Screenshot von Bill Gates' Twitter Account während des Hacks\footnotemark}
+\end{figure}
+\footcitetext{PicTwitterHack}
+Genauere Details zu den Umständen des Hacks wurden von Twitter aufgrund von Sicherheitsrisiken nicht veröffentlicht. 
+\par
+Im August 2021 wurden dann vier Personen verhaftet, darunter der damals noch 17-jährige Graham Ivan Clark, 
+der die Spear-Phishing-Attacke initiierte. Ein 19-jähriger führte zusammen mit einem 22-jährigen den 
+Bitcoin-Scam aus, während ein weiterer 22-jähriger Graham bei der Umsetzung des Angriffs unterstützte.\footcite{teampw_TwitterPhishing}
+
 
 % TODO
 \subsection{Weitere Skandale}
