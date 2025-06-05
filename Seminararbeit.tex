@@ -58,10 +58,6 @@
 
 \usepackage[footwidth=paper]{scrlayer-scrpage}
 
-\hyphenpenalty=10000
-\exhyphenpenalty=10000
-\tolerance=2000
-
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
@@ -263,7 +259,7 @@ der 17-jährige Graham Ivan Clark Zugriff auf die internen Systeme von Twitter v
 es ihm die Support-Tools von Twitter zu nutzen, um die Accounts der Opfer zu übernehmen. Insgesamt wurde von 45 Accounts
 getweeted, wobei 36 Accounts Zugriff auf private Nachrichten hatten. Von diesen Accounts wurde während Corona-Zeiten 
 ein Bitcoin-Scam gestartet, in welchem die Angreifer vorgetäuscht haben, sie würden alle gespendeten Bitcoins verdoppelt
-zurückgeben. Dadurch wurden insgesamt ca. 12,86 BTC (umgerechnet nahe 100.000 Euro) erbeutet.\footcite{teampw_TwitterPhishing}\\\\
+zurückgeben. Dadurch wurden insgesamt ca. 12,86 BTC (umgerechnet nahe 100.000 Euro) erbeutet.\footcite{teampw_TwitterPhishing}\\
 
 \begin{figure}[h!]
   \centering
@@ -278,31 +274,72 @@ der die Spear-Phishing-Attacke initiierte. Ein 19-jähriger führte zusammen mit
 Bitcoin-Scam aus, während ein weiterer 22-jähriger Graham bei der Umsetzung des Angriffs unterstützte.\footcite{teampw_TwitterPhishing}
 
 
-% TODO
-\subsection{Weitere Skandale}
-\begin{itemize}
-  \item PLATZHALTER
-\end{itemize}
-
 \section{Bezug zum Ethischen Hacking}
+Nach den oben genannten Definitionen und Beispielen stellt sich die Frage: Wenn diese Taktiken
+so schädlich sind, warum werden sie dann von Sicherheitsexperten eingesetzt? Hierbei hilft das Konzept
+des \textbf{Ethischen Hackings}, und der erste Schritt zum Verständnis führt über das sogenannte
+\textbf{Penetration Testing} (auch \textbf{Pentesting} genannt).
 
 % TODO
-\subsection{Social Engineering und Phishing als Werkzeuge im Penetration Testing}
-\begin{itemize}
-  \item PLATZHALTER
-\end{itemize}
+\subsection{Pentesting von Social Engineering}
+Beim Pentesting geht es darum, die Sicherheit eines Systems durch genehmigte Einbruchsübungen auf die 
+Probe zu stellen. Hierhei geht es nicht darum, Schaden anzurichten, sondern potentielle Schwachstellen
+noch vor Angreifern zu identifizieren und weitesgehend zu schließen.
+\par
+Dazu beauftragen Unternehmen Sicherheitsexperten, welche die eigenen Systeme auf Schwachstellen untersuchen.
+Dazu nutzen sie die gleichen Methoden und Werkzeuge, welche auch Angreifer verwenden würden. Pentesting gibt
+es oft in technischen Formen, wie zum Beispiel das Ausnutzen von Schwachstellen in Software oder Hardware,
+allerdings auch sehr häufig in Form von Social Engineering und Phishing.
+\par
+Ein Bespiel hierfür wäre, wenn ein Pentester eine E-Mail, welche vermeindlich von der IT-Abteilung stammt,
+mit einem Link an die Mitarbeiter des Unternehmens schickt. Jedoch führt der Link zu keiner schädlichen Website, sondern
+zu einer Informationsseite, in welcher erklärt ist, dass es sich um einen Test handelt. Dadurch wird 
+den Mitarbeitern gleichzeitig gezeigt, wie leicht solche Angriffe umsetzbar sind, ohne wirtschaftlichen Schaden
+anzurichten. Im Anschluss an solche Tests werden dann alle Daten ausgewertet und, falls nötig, mehrere Schulungen angeboten.
+
+\subsection{Rolle von Ethik und Moral}
+Durch die harmlose Intension hinter Pentesting kann man auf ersten Blick meinen, Menschen als Versuchsobjekte
+zu benutzen wäre moralisch und ethisch vertretbar. Allerdings muss hier beachtet werden, dass der 
+einzige Unterschied zwischen einem ethischen Hacker und einem Angreifer der \textbf{Kontext} ist.
+Ethisch betrachtet täuscht man hier bereitwillig Menschen, nur um einem guten Zweck zu dienen. 
+\par
+Hierzu muss man das \textbf{Prinzip des minimalen Schadens} als oberste ethische Regel betrachten. So sollten
+Personen, die in dem Test geprüft werden, keineswegs gedemütigt werden. Zudem soll keine Angst oder Panik
+verbreitet werden. So sollte die E-Mail keine gefälschte Kündigung enthalten, sondern zum Beispiel die 
+Ankündigung eines neuen Sicherheitssystems. Zudem sollten durch die Tests kein Datenverlust entstehen.
+\par
+Man kann auch in der Herangehensweise gewisse Züge des \textbf{Utilitarismus} erkennen. Diese Lehre besagt,
+dass eine Handlung exakt dann moralisch richtig ist, wenn das höhere Wohl aller Beteiligten dadurch gefördert.
+Dadurch lassen sich Pentests an Menschen sehr leicht rechtfertigen, da genau diese Absicht verfolgt wird.
+\par
+Eine vollständige \textbf{Aufklärung} ist nach den Tests unabdingbar. Alle Beteiligten sollen danach
+erfahren, dass es sich um einen Test gehandelt hat, was der Ziel hinter denen war und welche Maßnahmen
+jeder Einzelne ergreifen kann, damit er nicht Opfer eines tatsächlichen Angriffs wird.
+Die Mitarbeiter sollen sich nach den Tests sicherer und informierter fühlen, anstatt verunsichert und 
+verängstigt.
+\par
+Die Auswertung der Tests sollte auch unter jeden Umständen anonmyisiert erfolgen. Es geht nur um
+die statistische Auswertung, nicht die Beurteilung jedes Einzelnen. 
 
 % TODO
-\subsection{Aufklärung und Sensibilisierung durch simulierte Angriffe}
-\begin{itemize}
-  \item PLATZHALTER
-\end{itemize}
-
-% TODO
-\subsection{Rechtliche und ethische Rahmenbedingungen}
-\begin{itemize}
-  \item PLATZHALTER
-\end{itemize}
+\subsection{Rechtliche Rahmenbedingungen}
+Nachdem die ethischen Aspekte dargelegt wurden, stellt sich noch die Frage, in welcher Form solche 
+Pentests legal durchgeführt werden können. In Deutschland gilt erstmal das Hacking-Verbot und wird 
+im Strafgesetzbuch (StGB) unter Strafe gestellt. Für ethische Hacker sind vor allem die  
+sogenannten \textbf{Hackerparagraphen} von Bedeutung, die in § 202a bis § 202c StGB und § 303 StGB zu finden sind.
+\par
+Während § 202a StGB das Ausspähen von Daten, § 202b StGB das Abfangen von Daten und § 202c StGB 
+die Vorbereitung auf das Ausspähen und Abfangen von Daten unter Strafe stellt, halten diese Paragraphen
+primär erstmal keine Ausnahmen für ethische Hacker bereit. Was allerdings auch hier von Relevan ist, 
+ist die \textbf{Einwilligung des Betroffenen}. Diese ist unerlässlich, damit ethische Hacker legal arbeiten können.
+Alle ethischen Hacker müssen sich also vorab jeglicher Arbeit vertraglich absichern, sodass sie im 
+Falle eines Rechtsstreits beweisen können, dass sie die Erlaubnis des Betroffenen hatten. Dort werden alle
+Rahmenbedingungen, also Prüfungsumfang, Dauer, Art der Tests, Zielgruppe, Verschwiegenheit, etc., an die sich der Hacker 
+unter allen Umständen halten muss, festgehalten.
+\par
+Abschließend kann man also festhalten, dass man ohne Vetrag kein Pentesting durchführen darf. Erst die vorherige
+schriftliche und präzise Einwilligung des Rechteinhabers legalisiert das ethische Hacken. Und diese Einwilligung
+ist auch die Mauer, welche sogennante \textbf{Black-Hat-Hacker} von \textbf{White-Hat-Hackern} trennt.
 
 \section{Fazit und Ausblick}
 
