@@ -164,19 +164,13 @@ in denen Phishing bzw. Social Engineering Teil des Angriffs, aber nicht (nur) di
 Laut einer Studie von IBM verursachen größere Phishing-Angriffe im Jahr 2024 durchschnittlich 
 einen Schaden von etwa 4,88 Millionen US-Dollar pro Vorfall.\footcite{IBM_Phishing}
 Gerade Unternehmen sind besonders gefährdet, da die klaren Hierarchien es Angreifern ermöglichen, 
-gezielt bestimmte Personen zu imitieren. Dadurch lassen sich Mitarbeitende oft leichter dazu 
-verleiten, sensible Informationen preiszugeben oder unbewusst mit gutem Willen Schadsoftware herunterzuladen.
-Außerdem kann, wenn ein Unternehmen stark betroffen ist, ein enormer Vertrauensverlust gegenüber
-der Öffentlichkeit entstehen, was sich negativ auf die Verkaufszahlen auswirken kann.
+gezielt bestimmte Personen zu imitieren und bei Unternehmen generell mehr Profit entstehen kann.
 \par
 Ein sehr bekanntes Bespiel dafür ist der Target (US-amerikanische Einzelhändler) Hack von 2013,
-welcher (wenn auch nur indirekt) ungefähr 162 Millionen US-Dollar Schaden mit sich gebracht hat. Dadurch,
-dass Kreditkarteninformationen von Millionen Kunden gestohlen wurden, hat Target sowohl einen extremen
-Vertrauensverlust erlitten, als auch starke finanzielle Einbußen hinnehmen müssen.\footcite{Target_Breach}\\
+welcher (wenn auch nur indirekt) ungefähr 162 Millionen US-Dollar Schaden mit sich gebracht hat.\footcite{Target_Breach}\\
 
 \section{Definition von Social Engineering}
 
-% TODO
 \subsection{Grundprinzipien und Psychologie des Social Engineerings}
 Die Ausnutzung von menschlichen Eigenschaften wie unter anderem Vertrauen, Angst, Autorität, Hilfsbereitschaft 
 stehen im Vordergrund beim \textbf{Social Engineering}. Durch gezielte Manipulation
@@ -187,16 +181,11 @@ Hier geht es keineswegs um die Umgehung von technischen Schutzmaßnahmen, sonder
 Täuschung und Manipulation des Menschen als Schwachstelle stehen im Mittelpunkt, sodass technische Barrieren 
 oft irrelevant werden. Angreifer verfeinern ihre Methoden kontinuierlich durch erprobte Angriffstechniken. 
 Dadurch gelingt es ihnen immer schneller und häufiger, Menschen zu beeinflussen.
-Deswegen hilft auch nur eine Sache gegen diese Art von Angriffen: \textbf{Aufklärung}.\\
+Deswegen hilft auch nur eine Sache gegen diese Art von Angriffen: \textbf{Aufklärung}.
 
-% TODO
 \subsection{Gängige Methoden}
-Neben den Subgenre von Phishing ist \textbf{Baiting} sehr verbreitet.
-Hierbei geht es darum, dem Opfer falsche Versprechen zu geben. So kann zum Beispiel ein Gewinnspiel vorgetäuscht werden,
-welches angeblich gewonnen wurde. Baiting gibt es aber auch in physischer Form. Häufig legt ein Angreifer einen USB-Stick
-an einen gut ersichtlichen Ort und präperiert diesen im Vorhinein mit Malware. So muss das Opfer diesen 
-Stick nur an seinen Computer stecken und schon hat der Angreifer Zugriff auf das System.\footcite{CS_10Arten}
 \par
+Die Methoden des Social Engineerings sind so vielfältig wie man es sich nur vorstellen kann.
 Bei \textbf{Quid pro Quo} wird darauf geachtet, Opfern attraktive Dienstleistungen anzubieten, um im Gegenzug
 an Geld (oder in manchen Fällen auch sensible Daten) zu gelangen. Diese Strategie wurde im Netz vor allem durch den YouTuber \textit{Jim Browning} bekannt.
 Durch seine Videos, in denen er sogenannte Call-Center aufdeckt und diese sukzessive inflitriert und
@@ -211,27 +200,33 @@ vom Nutzer wäre kompromittiert worden.\footcite{Keeper_Scareware}
 \textbf{Honeytrapping} ist eine gängige Methode um sich mit Menschen, die auf diversen Dating-Plattformen nach
 ihrer Traumfrau suchen, anzufreunden und dadurch einen finanziellen Vorteil zu erlangen. Vor allem 
 der Aufschwung von Künstlicher Intelligenz und Date-Portalen hat es den Angreifern umso leicht gemacht
-gefälschte Profile zu erstellen und falsche Versprechen zu geben.\footcite{CS_10Arten}
+gefälschte Profile zu erstellen und falsche Versprechen zu geben.\footcite{CS_10Arten}\\
 
 \section{Definition von Phishing}
 
-% TODO
 \subsection{Definition und Abgrenzung als Teilbereich des Social Engineerings}
-\begin{itemize}
-  \item PLATZHALTER
-\end{itemize}
+Oft werden Social Engineering und Phishing als Synonyme verwendet, was jedoch nicht ganz korrekt ist.
+Phishing zählt zwar zu Social Engineering, aber nicht jedes Social Engineering fällt unter Phishing. 
+Phishing beschreibt den konkreten Versuch, um über bestimmte Kommunikationskanäle die Opfer zu manipulieren.
+Social Engineering hingegen ist jediglich der Überbegriff von der Herangehensweise, dass psychologische
+Manipulationstechniken genutzt werden, um ihre Ziele zu erreichen.\footcite{Keeper_Phishing}
 
-
-% TODO
-\subsection{Die Verschiedenen Arten von Phishing und ihre Ziele}
-\begin{itemize}
-  \item Spear Phishing, Whaling, Clone Phishing, Voice Phishing, Smishing, Vishing, Pharming, E-Mail Phishing, ..
-  \item Ziele (Datenklau (Finanzen maybe, aber auch Anschrift), Identitätsdiebstahl, Malware-Verbreitung, ..)
-\end{itemize}
+\subsection{Die Verschiedenen Arten von Phishing}
+Phishing kann in unfassbar viele kleinere Unterkategorien unterteilt werden. Besonders destruktiv kann
+\textbf{Spear Phishing} werden. Bei der Taktik werden gezielt sowohl der Empfängerkreis, als auch die E-Mails,
+welche verteilt werden, perfekt aufeinander abgestimmt. Dadurch kann es, vorausgesetzt es wird richtig
+umgesetzt, besonders glaubwürdig ankommen.
+\par
+Eine topmoderne Form stellt \textbf{Pharming} dar. Hierbei werden die Umleitung von Webseitname zu 
+Ip-Adressen manipuliert, sodass die Opfer zwar den richtigen Link aufrufen, allerdings auf eine falsche
+Seite weitergeleitet werden. Direkt kann man sich selbst als erfahrener Nutzer nicht so leicht schützen.\footcite{Bayern_Phaming}
+\par
+\textbf{Smishing} ist die Form, welche in der Einleitung erwähnt wurde. Hier werden Opfer über SMS oder
+WhatsApp-Nachrichten oft dazu gebracht, Geld zu überweisen. Heutzutage sind darunter oft die bekannten 
+``Mama/Papa, ich habe mein Handy verloren und brauche Geld''-Nachrichten zu finden.\\
 
 \section{Bekannte Phishing-Skandale und ihre Folgen}
 
-% TODO, TBD
 \subsection{Democratic National Committee (DNC)-Hack}
 Ein sehr bekanntes Beispiel für einen Phishing-Angriff ist der DNC-Hack von 2015 und 2016, 
 bei dem die demokratische Partei der USA Opfer eines Spear-Phishing-Angriffs wurde. 
@@ -249,7 +244,6 @@ große Rolle bei der Beeinflussung der Wahl gespielt hat. Man kann also sagen, d
 nicht nur ein Beispiel für Social Engineering und Phishing ist, sondern auch für die weitreichenden 
 politischen und gesellschaftlichen Auswirkungen, die politisch motivierte Angriffe haben können.
 
-% TODO, TBD
 \subsection{Twitter Spear Phishing Attack (2020)}
 
 Ein anderer bekannter Vorfall ist der Twitter-Skandal von 2020, bei dem eine Gruppe mittels Spear Phishing geschafft
@@ -271,7 +265,7 @@ Genauere Details zu den Umständen des Hacks wurden von Twitter aufgrund von Sic
 \par
 Im August 2021 wurden dann vier Personen verhaftet, darunter der damals noch 17-jährige Graham Ivan Clark, 
 der die Spear-Phishing-Attacke initiierte. Ein 19-jähriger führte zusammen mit einem 22-jährigen den 
-Bitcoin-Scam aus, während ein weiterer 22-jähriger Graham bei der Umsetzung des Angriffs unterstützte.\footcite{teampw_TwitterPhishing}
+Bitcoin-Scam aus, während ein weiterer 22-jähriger Graham bei der Umsetzung des Angriffs unterstützte.\footcite{teampw_TwitterPhishing}\\
 
 
 \section{Bezug zum Ethischen Hacking}
@@ -280,7 +274,6 @@ so schädlich sind, warum werden sie dann von Sicherheitsexperten eingesetzt? Hi
 des \textbf{Ethischen Hackings}, und der erste Schritt zum Verständnis führt über das sogenannte
 \textbf{Penetration Testing} (auch \textbf{Pentesting} genannt).
 
-% TODO
 \subsection{Pentesting von Social Engineering}
 Beim Pentesting geht es darum, die Sicherheit eines Systems durch genehmigte Einbruchsübungen auf die 
 Probe zu stellen. Hierhei geht es nicht darum, Schaden anzurichten, sondern potentielle Schwachstellen
@@ -321,7 +314,6 @@ verängstigt.
 Die Auswertung der Tests sollte auch unter jeden Umständen anonmyisiert erfolgen. Es geht nur um
 die statistische Auswertung, nicht die Beurteilung jedes Einzelnen. 
 
-% TODO
 \subsection{Rechtliche Rahmenbedingungen}
 Nachdem die ethischen Aspekte dargelegt wurden, stellt sich noch die Frage, in welcher Form solche 
 Pentests legal durchgeführt werden können. In Deutschland gilt erstmal das Hacking-Verbot und wird 
@@ -339,15 +331,10 @@ unter allen Umständen halten muss, festgehalten.
 \par
 Abschließend kann man also festhalten, dass man ohne Vetrag kein Pentesting durchführen darf. Erst die vorherige
 schriftliche und präzise Einwilligung des Rechteinhabers legalisiert das ethische Hacken. Und diese Einwilligung
-ist auch die Mauer, welche sogennante \textbf{Black-Hat-Hacker} von \textbf{White-Hat-Hackern} trennt.
+ist auch die Mauer, welche sogennante \textbf{Black-Hat-Hacker} von \textbf{White-Hat-Hackern} trennt.\\
+
 
 \section{Fazit und Ausblick}
-
-% TODO
-\subsection{Zusammenfassung}
-\begin{itemize}
-  \item PLATZHALTER
-\end{itemize}
 
 % TODO
 \subsection{Bedeutung von Präventionsmaßnahmen und Sensibilisierung}
